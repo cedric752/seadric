@@ -1,8 +1,7 @@
-package com.github.hanyaeger.tutorial;
+package Seadric;
 
 import com.github.hanyaeger.api.Size;
 import com.github.hanyaeger.api.YaegerGame;
-import com.github.hanyaeger.tutorial.entities.buttons.StartButton;
 
 public class Waterworld extends YaegerGame {
     public static void main(String[] args) {

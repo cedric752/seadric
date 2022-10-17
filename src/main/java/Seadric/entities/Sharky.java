@@ -1,4 +1,4 @@
-package com.github.hanyaeger.tutorial.entities;
+package Seadric.entities;
 
 import com.github.hanyaeger.api.Coordinate2D;
 import com.github.hanyaeger.api.Size;
@@ -6,7 +6,7 @@ import com.github.hanyaeger.api.entities.Collider;
 import com.github.hanyaeger.api.entities.SceneBorderCrossingWatcher;
 import com.github.hanyaeger.api.entities.impl.DynamicSpriteEntity;
 import com.github.hanyaeger.api.scenes.SceneBorder;
-import com.github.hanyaeger.tutorial.Waterworld;
+import Seadric.Waterworld;
 
 import java.util.Random;
 

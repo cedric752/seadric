@@ -1,4 +1,5 @@
 package com.github.hanyaeger.tutorial.entities;
+package Seadric.entities;
 
 import com.github.hanyaeger.api.Coordinate2D;
 import com.github.hanyaeger.api.Size;
@@ -9,8 +10,8 @@ import com.github.hanyaeger.api.entities.SceneBorderTouchingWatcher;
 import com.github.hanyaeger.api.entities.impl.DynamicSpriteEntity;
 import com.github.hanyaeger.api.scenes.SceneBorder;
 import com.github.hanyaeger.api.userinput.KeyListener;
-import com.github.hanyaeger.tutorial.Waterworld;
-import com.github.hanyaeger.tutorial.entities.text.HealthText;
+import Seadric.Waterworld;
+import Seadric.entities.text.HealthText;
 import javafx.scene.input.KeyCode;
 
 import java.util.Random;

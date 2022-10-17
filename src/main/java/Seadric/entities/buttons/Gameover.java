@@ -1,10 +1,12 @@
-package com.github.hanyaeger.tutorial.entities.buttons;
+package Seadric.entities.buttons;
 
+import Seadric.Waterworld;
 import com.github.hanyaeger.api.Coordinate2D;
 import com.github.hanyaeger.api.entities.impl.TextEntity;
 import com.github.hanyaeger.api.userinput.MouseButtonPressedListener;
 import com.github.hanyaeger.api.userinput.MouseEnterListener;
 import com.github.hanyaeger.api.userinput.MouseExitListener;
+import com.github.hanyaeger.tutorial.GameOver;
 import com.github.hanyaeger.tutorial.Waterworld;
 import javafx.scene.Cursor;
 import javafx.scene.input.MouseButton;
@@ -12,18 +14,19 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
-public class PlayAgain extends TextEntity implements MouseButtonPressedListener, MouseEnterListener, MouseExitListener {
+public class Gameover extends TextEntity implements MouseButtonPressedListener, MouseEnterListener, MouseExitListener {
+
     private Waterworld waterworld;
-    public PlayAgain(Coordinate2D initialLocation, Waterworld waterworld) {
-        super(initialLocation, "Play again");
+    public Gameover(Coordinate2D initialLocation, Waterworld waterworld){
+        super(initialLocation, "Quit game");
         this.waterworld = waterworld;
-        setFill(Color.PURPLE);
+        setFill(Color.BLACK);
         setFont(Font.font("Roboto", FontWeight.BOLD, 30));
     }
 
     @Override
     public void onMouseButtonPressed(MouseButton mouseButton, Coordinate2D coordinate2D) {
-        waterworld.setActiveScene(1);
+        waterworld.quit();
     }
 
     @Override

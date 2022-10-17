@@ -1,5 +1,6 @@
-package com.github.hanyaeger.tutorial.entities.buttons;
+package Seadric.entities.buttons;
 
+import Seadric.Waterworld;
 import com.github.hanyaeger.api.Coordinate2D;
 import com.github.hanyaeger.api.entities.impl.TextEntity;
 import com.github.hanyaeger.api.userinput.MouseButtonPressedListener;
@@ -12,10 +13,10 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
-public class StartButton extends TextEntity implements MouseButtonPressedListener, MouseEnterListener,MouseExitListener {
+public class PlayAgain extends TextEntity implements MouseButtonPressedListener, MouseEnterListener, MouseExitListener {
     private Waterworld waterworld;
-    public StartButton(Coordinate2D initialLocation, Waterworld waterworld) {
-        super(initialLocation, "Play game");
+    public PlayAgain(Coordinate2D initialLocation, Waterworld waterworld) {
+        super(initialLocation, "Play again");
         this.waterworld = waterworld;
         setFill(Color.PURPLE);
         setFont(Font.font("Roboto", FontWeight.BOLD, 30));

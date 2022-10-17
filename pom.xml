@@ -36,7 +36,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.github.hanyaeger.tutorial.Waterworld</mainClass>
+                    <mainClass>Seadric.Waterworld</mainClass>
                 </configuration>
             </plugin>
         </plugins>
